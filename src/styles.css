@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
-    background: #272044;
+    background: #12101D;
     color: white;
 }
 
@@ -8,8 +8,6 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
-
-
 
 .hero {
     background-image: linear-gradient(rgba(15, 13, 27, 0.6), rgba(15, 13, 27, 0.6)), url("../images/bg.png");
@@ -51,8 +49,51 @@ body {
     margin-top: 30px;
     text-transform: uppercase;
     background: white;
-
     display: inline-block;
+}
+
+section {
+    padding: 80px 30px;
+}
+
+.grid {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-2-columns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 64px;
+}
+
+.grid-2-columns img {
+    object-fit: cover;
+}
+
+.grid-2-columns h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+
+.grid-2-columns h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: rgba(100, 100, 100, 0.3);
+    margin: 0;
+}
+
+.grid-2-columns p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(100, 100, 100, 0.5);
+    margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -72,4 +113,22 @@ body {
     .hero h3 {
         font-size: 20px;
     }
+
+    section {
+        padding: 40px 30px;
+    }
+
+    .grid-2-columns {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .grid-2-columns img {
+        width: 100%;
+    }
+
+    .grid-2-columns h2 {
+        overflow-wrap: break-word;
+    }
+
 }

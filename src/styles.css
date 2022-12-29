@@ -104,6 +104,7 @@ section.secondary {
 img {
     width: 100%;
     display: block;
+    filter: contrast(110%) saturate(36%);
 }
 
 .grid-3-columns {
@@ -165,6 +166,23 @@ img {
     grid-gap: 64px;
 }
 
+table {
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
 footer {
     background-image: linear-gradient(rgba(15, 13, 27, 0.9), rgba(15, 13, 27, 0.9)), url("../images/new-york-city-skyline-panorama.jpg");
     background-repeat: no-repeat;
@@ -221,6 +239,14 @@ footer a {
 
     .grid-2-columns h2 {
         overflow-wrap: break-word;
+    }
+
+    .card img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
     }
 
 }

@@ -95,7 +95,7 @@ section,
     object-fit: cover;
 }
 
-.grid-2-columns h2 {
+.grid-2-columns h3 {
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
@@ -103,7 +103,7 @@ section,
     margin-bottom: 18px;
 }
 
-.grid-2-columns h3 {
+.grid-2-columns h2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;

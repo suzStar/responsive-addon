@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(15, 13, 27, 0.6), rgba(15, 13, 27, 0.6)), url("../images/bg.png");
+    background-image: linear-gradient(rgba(15, 13, 27, 0.6), rgba(15, 13, 27, 0.6)), url("../images/header.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -52,7 +52,31 @@ body {
     display: inline-block;
 }
 
-section {
+footer {
+    background-image: linear-gradient(rgba(15, 13, 27, 0.9), rgba(15, 13, 27, 0.9)), url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+footer a,
+P {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section,
+.footer-grid {
     padding: 80px 30px;
 }
 
@@ -84,7 +108,7 @@ section {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 5px;
-    color: rgba(100, 100, 100, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     margin: 0;
 }
 
@@ -92,8 +116,32 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: rgba(100, 100, 100, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     margin: 0;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 64px;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    text-align: center;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -118,7 +166,8 @@ section {
         padding: 40px 30px;
     }
 
-    .grid-2-columns {
+    .grid-2-columns,
+    .grid-3-columns {
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }

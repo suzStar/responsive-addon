@@ -139,6 +139,11 @@ img {
     aspect-ratio: 1 /1;
 }
 
+.insta-embed {
+    margin: 0 auto;
+    display: block;
+}
+
 .card-body {
     padding: 30px;
 }
